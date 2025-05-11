@@ -1,0 +1,23 @@
+{
+  "name": "wsoficio-onr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "apps:api": "pnpm --filter @repo/api --",
+    "apps:web": "pnpm --filter @repo/web --",
+    "update-catalog": "pnpx codemod pnpm/catalog",
+    "preinstall": "npx only-allow pnpm",
+    "preupdate": "npx only-allow pnpm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.9.0",
+  "engines": {
+    "node": ">=22.15.0",
+    "pnpm": ">=10.9.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  }
+}
